@@ -22,9 +22,9 @@ var target;
 var time;
 
 function setup() {
-    var canvas = createCanvas(windowWidth, windowHeight);
+    var canvas = createCanvas(400, 400);
+    canvas.position(0, 50);
     video = createCapture(VIDEO);
-    
     video.hide();
     poseNet = ml5.poseNet(video, modelLoaded);
     poseNet.on('pose', gotPoses);
