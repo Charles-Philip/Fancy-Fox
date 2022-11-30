@@ -6,8 +6,8 @@ html, body {
 }
 canvas {
   display: block;
-  padding: 5px;
-  width: 60%;
+  padding: 10px;
+  width: 100%;
 }
 * {
   box-sizing: border-box;
@@ -17,9 +17,9 @@ canvas {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
-  width:400px; 
-  height:300px; 
+  width: 45%;
+  width: 290px; 
+  height: 290px; 
   padding: 10px;
 }
 
