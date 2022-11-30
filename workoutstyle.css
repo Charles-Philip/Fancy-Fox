@@ -1,7 +1,41 @@
 html, body {
   margin: 0;
   padding: 0;
+  overflow: hidden;
 }
 canvas {
   display: block;
+}
+* {
+  box-sizing: border-box;
+}
+
+.image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  width:400px; 
+  height:300px; 
+  padding: 10px;
+}
+
+.column {
+  float: left;
+}
+
+.left {
+  width: 60%;
+  align-self: center;
+}
+
+.right {
+  width: 40%;
+  align-self: center;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
