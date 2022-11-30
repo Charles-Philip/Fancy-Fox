@@ -19,6 +19,7 @@ var frameCounter;
 var poseCounter;
 var target;
 
+var max_time;
 var time;
 
 function setup() {
@@ -36,11 +37,14 @@ function setup() {
       image_Array[idx].src = 'images/' + posesArray[idx] + ".png";
     }
 
+    max_time = 20; //20 secs
+
 
     poseCounter = 0;
     errorCounter = 0;
     frameCounter = 0;
-    time = 5;
+
+    time = max_time;
 
     target = posesArray[poseCounter];
     document.getElementById("target_pose").textContent = target;
@@ -111,7 +115,7 @@ function gotResult(error, results)
             console.log("Label Detected: " + labels_arr[poseCounter]);
             frameCounter = frameCounter + 1;
             console.log("Count at: " + frameCounter)
-            if (frameCounter == 5) 
+            if (frameCounter == max_time) 
             {
                 console.log("end of counter")
                 frameCounter = 0;
@@ -133,7 +137,7 @@ function gotResult(error, results)
             if (errorCounter >= 15) 
             {
                 console.log("Too many errors: " + errorCounter+ " restarting counter and timer");
-                time = 5;
+                time = max_time;
                 let str_time = (time < 10 ? "00:0" : "00:") + time + " remaining";
                 document.getElementById("timer").textContent = str_time;
                 errorCounter = 0;
@@ -210,7 +214,7 @@ function LoadNextPose()
         target = posesArray[poseCounter];
         document.getElementById("target_pose").textContent = target;
 
-        time = 5;
+        time = max_time;
         let str_time = (time < 10 ? "00:0" : "00:") + time + " remaining";
         document.getElementById("timer").textContent = str_time;
 
