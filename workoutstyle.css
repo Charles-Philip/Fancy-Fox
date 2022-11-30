@@ -7,7 +7,6 @@ html, body {
 canvas {
   display: block;
   padding: 20px;
-  position: relative;
 }
 * {
   box-sizing: border-box;
