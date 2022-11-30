@@ -1,12 +1,10 @@
 html, body {
   margin: 0;
   padding: 0;
-  max-width: 1000px; 
-  max-height: 400px;
 }
 canvas {
   display: block;
-  padding: 20px;
+  padding: 10px;
 }
 * {
   box-sizing: border-box;
