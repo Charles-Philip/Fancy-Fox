@@ -1,8 +1,8 @@
 html, body {
   margin: 0;
   padding: 0;
-  max-height: fit-content;
-  overflow: hidden;
+  width: 1000dp;
+    height: 500dp;
 }
 canvas {
   display: block;
