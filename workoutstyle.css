@@ -30,11 +30,15 @@ canvas {
 .left {
   width: 60%;
   align-self: center;
+  align-content: center;
+  align-items: center;
 }
 
 .right {
   width: 40%;
   align-self: center;
+  align-content: center;
+  align-items: center;
 }
 
 .row:after {
