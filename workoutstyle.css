@@ -7,7 +7,7 @@ html, body {
 canvas {
   display: block;
   padding: 20px;
-  width: 100%;
+  width: 60%;
 }
 * {
   box-sizing: border-box;
