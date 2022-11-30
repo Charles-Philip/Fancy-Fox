@@ -22,7 +22,7 @@ var target;
 var time;
 
 function setup() {
-    var canvas = createCanvas(640, 480);
+    var canvas = createCanvas(440, 280);
     canvas.position(0, 50);
     video = createCapture(VIDEO);
     video.hide();
