@@ -14,19 +14,16 @@
 
 <body>
   <main>
-    <div>
-      
-    <img id="pose_image" src="./images/tree.jpg" style="position: absolute; top: 8px; right:16px top: 50%; width: 50%;"> 
-      <h1 id="target_pose" style="font-size: 100px; text-align:center; position: relative;
-      top: -05%;
-      width: 100%;">
-        <span>Loading Pose Name</span>
-      </h1>
-          <script src="workout.js"></script>
-
-    <h1 id="timer" style="font-size: 100px; position: absolute; bottom: 8px;left: 16px;"><span >XX:XX</span></h1> 
-      
-          </div>
+    <div class="row">
+      <div class="column left">
+        <h1>Recording in progress...</h1>
+        <script src="workout.js"></script>
+      </div>
+      <div class="column right">
+        <h2 id="target_pose" class="child" style="font-size: 50px; text-align:center;"><span>Loading Pose Name</span></h2>
+        <img class = "image" id="pose_image" src="./images/tree.jpg"> 
+        <h1 id="timer" style="font-size: 50px; text-align:center;"><span >XX:XX</span></h1>
+      </div>
 
   </main>
 </body>
