@@ -22,8 +22,8 @@ var target;
 var time;
 
 function setup() {
-    var canvas = createCanvas(640, 480);
-    canvas.position(650, 250);
+    var canvas = createCanvas(620, 460);
+    canvas.position(70, 110);
     video = createCapture(VIDEO);
     video.hide();
     poseNet = ml5.poseNet(video, modelLoaded);
