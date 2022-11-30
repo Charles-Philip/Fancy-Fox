@@ -1,10 +1,13 @@
 html, body {
   margin: 0;
   padding: 0;
+  max-width: 1000px; 
+  max-height: 400px;
 }
 canvas {
   display: block;
-  padding: 10px;
+  padding: 5px;
+  width: 60%;
 }
 * {
   box-sizing: border-box;
@@ -15,8 +18,8 @@ canvas {
   margin-left: auto;
   margin-right: auto;
   width: 45%;
-  width: 290px; 
-  height: 290px; 
+  width: 300px; 
+  height: 300px; 
   padding: 10px;
 }
 
