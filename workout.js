@@ -33,7 +33,7 @@ function setup() {
     {
   
       image_Array[idx] = new Image();
-      image_Array[idx].src = 'images/' + posesArray[idx] + ".jpg";
+      image_Array[idx].src = 'images/' + posesArray[idx] + ".png";
     }
 
 
