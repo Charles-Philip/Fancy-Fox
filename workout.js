@@ -24,7 +24,13 @@ var time;
 
 function setup() {
     var canvas = createCanvas(640, 480);
-    canvas.position(0, 90);
+
+    var x = (windowWidth - width) / 2;
+    var y = (windowHeight - height) / 2;
+    cnv.position(x, y);
+    //background(51);
+
+    //canvas.position(0, 90);
 //     rectMode(CENTER);
     video = createCapture(VIDEO);
 //     video.size(640, 480);
