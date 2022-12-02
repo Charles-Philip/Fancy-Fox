@@ -30,14 +30,9 @@ function centerCanvas() {
 }
 
 function setup() {
-    canvas = createCanvas(640, 480);
-    centerCanvas();
-    //var x = (windowWidth - width) / 2;
-    //var y = (windowHeight - height) / 2;
-    //cnv.position(x, y);
-    //background(255, 0, 200);
 
-    canvas.position(0, 90);
+    var canvas = createCanvas(640, 480);
+    canvas.position(0, 70);
 //     rectMode(CENTER);
     video = createCapture(VIDEO);
 //     video.size(640, 480);
