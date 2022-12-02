@@ -21,10 +21,19 @@ var target;
 var desired_conf;
 var max_time;
 var time;
+var canvas;
+
+function centerCanvas() {
+    var x = (windowWidth - width) / 2;
+    var y = (windowHeight - height) / 2;
+    canvas.position(x, y);
+}
 
 function setup() {
-    var canvas = createCanvas(640, 480);
-    canvas.position(0, 90);
+    canvas = createCanvas(640, 480);
+    centerCanvas();
+
+    //canvas.position(0, 90);
 //     rectMode(CENTER);
     video = createCapture(VIDEO);
 //     video.size(640, 480);
@@ -73,6 +82,10 @@ function setup() {
         weights: model_weights_bin,
     };
     yoga_model.load(modelInfo, yoga_modelLoaded);
+}
+
+function windowResized() {
+    centerCanvas();
 }
 
 function yoga_modelLoaded() {
