@@ -24,7 +24,7 @@ var time;
 
 function setup() {
     var canvas = createCanvas(640, 480);
-    canvas.position(40, 100);
+    canvas.position(0, 70);
 //     rectMode(CENTER);
     video = createCapture(VIDEO);
 //     video.size(640, 480);
