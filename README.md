@@ -1,6 +1,6 @@
 # AI Fit
 
-## CMPE195 Fall 2022 Senior Project
+CMPE195 Fall 2022 Senior Project
 
 Submitted by Team 22:
 - Charles Im
