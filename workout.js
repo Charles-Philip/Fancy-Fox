@@ -21,18 +21,10 @@ var target;
 var desired_conf;
 var max_time;
 var time;
-var canvas;
-
-function centerCanvas() {
-    var x = (windowWidth - width) / 2;
-    var y = (windowHeight - height) / 2;
-    canvas.position(x, y);
-}
 
 function setup() {
-
     var canvas = createCanvas(640, 480);
-    canvas.position(0, 70);
+    canvas.position(0, 90);
 //     rectMode(CENTER);
     video = createCapture(VIDEO);
 //     video.size(640, 480);
@@ -71,18 +63,7 @@ function setup() {
         inputs: 34,
         outputs: 3,
         task: 'classification',
-        debug: true,
-        layers:[
-            {
-              type: 'dense',
-              units: this.options.hiddenUnits,
-              activation: 'relu',
-            },
-            {
-              type: 'dense',
-              activation: 'softmax',
-            },
-          ]
+        debug: true
     }
 
     yoga_model = ml5.neuralNetwork(options);
@@ -93,10 +74,7 @@ function setup() {
     };
     yoga_model.load(modelInfo, yoga_modelLoaded);
 }
-function windowResized() {
-    console.log("Canvas Centering");
-    centerCanvas();
-}
+
 function yoga_modelLoaded() {
     console.log("Model ready!");
     classifyPose();
