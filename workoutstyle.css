@@ -3,7 +3,6 @@ html, body {
   padding: 0;
   max-width: 1000px; 
   max-height: 1000px;
-  position: relative;
 }
 canvas {
   display: block;
@@ -25,6 +24,7 @@ canvas {
 
 .column {
   float: left;
+  position: relative;
 }
 
 .left {
