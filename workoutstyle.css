@@ -24,21 +24,17 @@ canvas {
 
 .column {
   float: left;
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .left {
   width: 60%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
 }
 
 .right {
   width: 40%;
-   position: absolute;
-  top: 50%;
-  left: 50%;
 }
 
 .row:after {
