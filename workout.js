@@ -23,11 +23,11 @@ var max_time;
 var time;
 
 function setup() {
-    var canvas = createCanvas(600, 480);
+    var canvas = createCanvas(640, 480);
     canvas.position(40, 100);
 //     rectMode(CENTER);
     video = createCapture(VIDEO);
-    video.size(600, 480);
+//     video.size(640, 480);
     video.hide();
     poseNet = ml5.poseNet(video, modelLoaded);
     poseNet.on('pose', gotPoses);
