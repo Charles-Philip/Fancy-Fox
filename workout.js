@@ -18,7 +18,7 @@ var errorCounter;
 var frameCounter;
 var poseCounter;
 var target;
-
+var desired_conf;
 var max_time;
 var time;
 
@@ -40,13 +40,14 @@ function setup() {
     }
 
     max_time = 20; //20 secs
+    desired_conf = 0.70; // 70% confidence level
 
 
     poseCounter = 0;
     errorCounter = 0;
     frameCounter = 0;
 
-    time = max_time;
+    time = (max_time - frameCounter);
 
     target = posesArray[poseCounter];
     document.getElementById("target_pose").textContent = target;
@@ -98,7 +99,7 @@ function classifyPose() {
 function gotResult(error, results) 
 {
    
-    if (results[0].confidence > 0.60)
+    if (results[0].confidence > desired_conf)
     {
         console.log("Confidence: " + results[0].confidence);
         if (results[0].label.toUpperCase() == labels_arr[poseCounter].toString())
@@ -216,7 +217,7 @@ function LoadNextPose()
         target = posesArray[poseCounter];
         document.getElementById("target_pose").textContent = target;
 
-        time = max_time;
+        time = (max_time - frameCounter);
         let str_time = (time < 10 ? "00:0" : "00:") + time + " remaining";
         document.getElementById("timer").textContent = str_time;
 
