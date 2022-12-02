@@ -8,12 +8,12 @@ Submitted by Team 22:
 - Dylan Zeglinski
 
 AI Fit is a machine learning project using computer vision to id and to score workout posture to help people with their workout goals.
-This repository contains MERN part of the project. You can find the UI part [here](https://github.com/Charles-Philip/Fancy-Fox).
+This repository contains ML part of the project. You can find the UI part [here](https://github.com/anamatxcova/wpc).
 
 
 ## Setup/installl and run the project
 1. Go to [UI part](https://github.com/Charles-Philip/Fancy-Fox).
-2. Run follow the steps there to run the app
+2. Follow the steps from that repo to run the app
 3. If you just want to test the ML part go to (https://charles-philip.github.io/Fancy-Fox/)
 
 
