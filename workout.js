@@ -99,7 +99,7 @@ function classifyPose() {
 function gotResult(error, results) 
 {
    
-    if (results[0].confidence > desired_conf)
+    if (results[0].confidence > 0.70)
     {
         console.log("Confidence: " + results[0].confidence);
         if (results[0].label.toUpperCase() == labels_arr[poseCounter].toString())
