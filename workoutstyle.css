@@ -25,12 +25,12 @@ canvas {
 }
 
 .left {
-  width: 70%;
+  width: 60%;
   align-self: center;
 }
 
 .right {
-  width: 30%;
+  width: 40%;
   align-self: center;
 }
 
