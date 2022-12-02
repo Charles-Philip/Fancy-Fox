@@ -2,7 +2,7 @@ html, body {
   margin: 0;
   padding: 0;
   max-width: 1000px; 
-  max-height: 1000px;
+  max-height: 400px;
 }
 canvas {
   display: block;
@@ -13,7 +13,7 @@ canvas {
 }
 
 .image {
-/*   display: block; */
+  display: block;
   margin-left: auto;
   margin-right: auto;
   width: 60%;
@@ -24,9 +24,6 @@ canvas {
 
 .column {
   float: left;
-/*   display: flex;
-  justify-content: center;
-  align-items: center; */
 }
 
 .left {
@@ -36,6 +33,7 @@ canvas {
 
 .right {
   width: 40%;
+  align-self: center;
 }
 
 .row:after {
