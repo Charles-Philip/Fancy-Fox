@@ -6,9 +6,9 @@ html, body {
 p5Canvas {
   margin: 0;
   display: flex;
-
+  width: 3000;
+  height: 3000;
   justify-content: center;
-
   align-items: center;
 }
 
