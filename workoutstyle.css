@@ -49,3 +49,11 @@ canvas {
   display: table;
   clear: both;
 }
+
+footer {
+  text-align: center;
+  padding: 3px;
+  position:fixed;
+  left:0px;
+  bottom:0px;
+}
