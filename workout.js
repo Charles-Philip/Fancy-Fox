@@ -83,7 +83,7 @@ function yoga_modelLoaded() {
 function classifyPose() {
     if (pose) {
         let inputs = [];
-        for (let idx = 0; idx < pose.keypoints.length; i++) {
+        for (let idx = 0; idx < pose.keypoints.length; idx++) {
             let x = pose.keypoints[idx].position.x;
             let y = pose.keypoints[idx].position.y;
             inputs.push(x);
