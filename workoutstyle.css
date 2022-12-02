@@ -41,7 +41,7 @@ canvas {
 
 .right {
   width: 40%;
-  align-self: center;
+  align-self: right;
 }
 
 .row:after {
