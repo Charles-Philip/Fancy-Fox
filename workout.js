@@ -38,7 +38,7 @@ function setup() {
     canvas = createCanvas(640, 480);
     //centerCanvas();
 
-    canvas.position(0, 90);
+    canvas.position(0, 110);
 //     rectMode(CENTER);
     video = createCapture(VIDEO);
 //     video.size(640, 480);
