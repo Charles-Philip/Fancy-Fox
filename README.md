@@ -18,8 +18,8 @@ This repository contains ML part of the project. You can find the UI part [here]
 
 
 ## Demo
+You can find a video demo [here](https://drive.google.com/file/d/1h0WqROzAJGAOAKGvK5ZokO04MTSP6YuR/view?usp=share_link)
 
-<img src=' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 ## Notes
 - ML5 Framework over Tensorflow model
