@@ -40,7 +40,7 @@ function setup() {
 
     canvas.position(0, 90);
 //     rectMode(CENTER);
-    //video = createCapture(VIDEO);
+    video = createCapture(VIDEO);
 //     video.size(640, 480);
     video.hide();
     poseNet = ml5.poseNet(video, modelLoaded);
