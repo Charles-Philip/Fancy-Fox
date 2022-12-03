@@ -53,7 +53,7 @@ function setup() {
       image_Array[idx].src = 'images/' + posesArray[idx] + ".png";
     }
 
-    max_time = 20; //20 secs
+    max_time = 10; //10 secs
     desired_conf = 0.70; // 70% confidence level
 
 
