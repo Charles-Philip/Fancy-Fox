@@ -18,30 +18,15 @@ var errorCounter;
 var frameCounter;
 var poseCounter;
 var target;
-var desired_conf;
 var max_time;
 var time;
 var canvas;
 
-/*
-function centerCanvas() {
-    var x = (windowWidth - width) / 2;
-    var y = (windowHeight - height) / 2;
-    canvas.position(x, y);
-}
-
-function windowResized() {
-    centerCanvas();
-}
-*/
 function setup() {
     canvas = createCanvas(640, 480);
-    //centerCanvas();
 
     canvas.position(100, 60);
-//     rectMode(CENTER);
     video = createCapture(VIDEO);
-//     video.size(640, 480);
     video.hide();
     poseNet = ml5.poseNet(video, modelLoaded);
     poseNet.on('pose', gotPoses);
@@ -53,7 +38,7 @@ function setup() {
       image_Array[idx].src = 'images/' + posesArray[idx] + ".png";
     }
 
-    max_time = 10; //10 secs
+    max_time = 20; //20 secs
     desired_conf = 0.70; // 70% confidence level
 
 
@@ -61,7 +46,7 @@ function setup() {
     errorCounter = 0;
     frameCounter = 0;
 
-    time = (max_time - frameCounter);
+    time = (max_time);
 
     target = posesArray[poseCounter];
     document.getElementById("target_pose").textContent = target;
@@ -233,7 +218,7 @@ function LoadNextPose()
         target = posesArray[poseCounter];
         document.getElementById("target_pose").textContent = target;
 
-        time = (max_time - frameCounter);
+        time = (max_time);
         let str_time = (time < 10 ? "00:0" : "00:") + time + " remaining";
         document.getElementById("timer").textContent = str_time;
 
