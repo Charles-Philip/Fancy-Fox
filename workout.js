@@ -23,19 +23,24 @@ var max_time;
 var time;
 var canvas;
 
+/*
 function centerCanvas() {
     var x = (windowWidth - width) / 2;
     var y = (windowHeight - height) / 2;
     canvas.position(x, y);
 }
 
+function windowResized() {
+    centerCanvas();
+}
+*/
 function setup() {
     canvas = createCanvas(640, 480);
-    centerCanvas();
+    //centerCanvas();
 
-    //canvas.position(0, 90);
+    canvas.position(0, 90);
 //     rectMode(CENTER);
-    video = createCapture(VIDEO);
+    //video = createCapture(VIDEO);
 //     video.size(640, 480);
     video.hide();
     poseNet = ml5.poseNet(video, modelLoaded);
@@ -84,9 +89,7 @@ function setup() {
     yoga_model.load(modelInfo, yoga_modelLoaded);
 }
 
-function windowResized() {
-    centerCanvas();
-}
+
 
 function yoga_modelLoaded() {
     console.log("Model ready!");
